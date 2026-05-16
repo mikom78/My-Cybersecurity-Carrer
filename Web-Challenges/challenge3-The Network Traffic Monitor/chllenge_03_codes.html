@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Network Traffic Monitor</title>
+<style>
+     body{background-color: black;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 90vh;
+          margin: 1px;
+          color: #32cd32;}
+     h1{border-bottom: 2px solid #32cd32;
+        padding-bottom: 10px;
+        margin-bottom: 40px;
+        text-transform: uppercase;}
+     .dashboard{display: flex;
+                gap: 20px;}
+     .loading-bar{width: 96%;
+                  height: 10px;
+                  background-color: #a9a9a9;
+                  border: 2px solid #0ff;
+                  border-radius: 3px;
+                  animation-name: pulse;/*to attach to the @keyframe */
+                  animation-duration: 1s;/*how much the duration of the animation would be*/
+                  animation-iteration-count: infinite;/*loop the animation forever*/
+                  animation-direction: alternate;/*pal forwards,then backwards*/}
+     .server-card{border:1px solid #32cd32;
+                  padding: 20px;
+                  background-color: #1a1a1a;
+                  border-radius: 8px;
+                  text-align: center;
+                  width: 150px;
+                  transition: all 0.3s ease;}
+     .server-card:hover{transform: scale(1.05);
+                        border:2px solid #0ff;
+                        border-radius: 3px;}
+     .offline .loading-bar{animation: blink 0.5s infinite;/*you can simply write like this rather than in the loading-bar*/
+                           background-color: #f00;
+                           box-shadow: 0 0 10px #f00;
+                           margin-bottom: 4px;}
+     .offline span{color: red;
+                   font-weight: bold;
+                   animation: blink 0.5s infinite;} 
+     .threat-container{margin-bottom: 20px;
+                       font-size: 1.2rem;
+                       padding: 10px 20px;
+                       border: 1px dashed #32cd32;}
+     #threat-container{color: #39ff14;
+                       text-shadow: 0 0 5px #39ff14;}
+     @keyframes pulse{0%{background-color: darkgreen;/*color at the start (0%)*/}
+                      100%{background-color:#39ff14;/*cole athe end(100%)*/}}
+     @keyframes blink{0%{opacity: 1;}
+                      50%{opacity: 0;}
+                      100%{opacity: 1;}}
+</style>
+</head>
+<body>
+  <h1>System Network Status</h1>
+  <div class="threat-container">
+    <p>Current Threat Level:<span id="threat-container">LOW</span></p>
+  </div>
+  <div class="dashboard">
+      <div class="server-card offline">
+          <h3>Mainframe</h3>
+          <div class="loading-bar"></div>
+          <span>Status:OFFLINE</span>
+      </div>
+      <div class="server-card">
+          <h3>Database</h3>
+          <div class="loading-bar"></div>
+          <span>Status:online</span>
+      </div>
+      <div class="server-card">
+          <h3>Firewall</h3>
+          <div class="loading-bar"></div>
+          <span>Status:online</span>
+      </div>  
+  </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Reactive Security Console</title>
+<style>
+   body{background-color: black;
+        font-family: 'Courier New', Courier, monospace;
+        color: #32cd32;
+        text-align: left;}
+   .console-box{border: 2px solid red;
+                box-shadow:0 0 20px red;
+                border-radius: 20px;
+                padding: 20px;
+                margin: 50px auto;
+                width: 300px;}
+   .safe{color: #32cd32;}
+   .warning{color: yellow;}
+   #lock-button{background-color: black;
+                color: #0f0;
+                padding:8px 20px;
+                border: none;
+                border-radius:6px;
+                transition: background-color 0.3s,transform 0.3s;
+                font-weight: bold;
+                letter-spacing: 1.5PX;}
+   #lock-button:hover{background-color: #000;
+                      color: #f00;
+                      transform: scale(1.1);
+                      cursor: pointer;}                     
+</style>
+</head>
+<body>
+    <div class="console-box"> 
+      <h1>SYSTEM ACCESS GRANTED</h1>
+      <ul>
+          <li class="safe">Firewall: Active</li>
+          <li class="safe">Network:Scanning...</li>
+          <li class="warning">Threat level:Low</li>
+          <li class="warning">Admin:Miko</li>
+      </ul>
+      <button id="lock-button">LOCK SYSTEM</button>
+   </div>
+</body>
+</html>

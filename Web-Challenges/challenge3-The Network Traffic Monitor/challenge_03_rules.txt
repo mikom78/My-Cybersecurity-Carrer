@@ -1,0 +1,34 @@
+Date:March 21,2026
+Challenge:The Network Traffic Monitor
+goal:Create a dashboard that shows three different "Servers" and their current status.
+
+
+
+Part 1: The Structure (HTML)
+Create a Main Container (div with class dashboard).
+
+Inside that, create 3 smaller boxes (div with class server-card).
+
+Inside each server-card, add:
+
+An <h3> for the Server Name (e.g., "Mainframe", "Database", "Firewall").
+
+A <div> with a class of loading-bar.
+
+A <span> that says "Status: Online".
+
+Part 2: The Design (CSS)
+The Dashboard: Use display: flex; to make the 3 servers sit side-by-side in a row.
+
+The Loading Bar: * Give it a width of 100% and a height of 10px.
+
+Give it a dark gray background.
+
+The "Pulse" Animation: * Create a @keyframes called pulse.
+
+Make the background color go from Dark Green to Bright Neon Green.
+
+Apply this animation to the loading-bar so it looks like it's "breathing."
+
+Part 3: The "Admin" Hover
+When you hover your mouse over a server-card, make that specific card grow slightly (transform: scale(1.05);) and change the border to Cyan Blue.

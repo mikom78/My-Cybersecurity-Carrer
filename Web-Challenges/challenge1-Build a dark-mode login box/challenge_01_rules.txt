@@ -1,0 +1,19 @@
+Date:March 16,2026
+Challenge:Build a dark-mode login box
+You need to create a simple login screen for your own "Hacker Terminal."
+
+HTML Requirements:
+
+One <h1> title that says "SYSTEM LOCKED".
+
+One <p> that says "Enter Security Key:".
+
+One <button> that says "DECRYPT".
+
+2. CSS Requirements:
+
+Background: Black.
+
+Text: Lime Green (like a 90s computer).
+
+Border: The button should have a White border.
