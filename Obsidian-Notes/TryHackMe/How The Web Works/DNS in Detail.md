@@ -14,7 +14,7 @@
         -Taking tryhackme.com as an example, the tryhackme is the Second Level Domain. When registering a domain name, the second-level domain is limited to 63 characters + the TLD and can only use a-z 0-9 and hyphens (cannot start or end with hyphens or have consecutive hyphens).
     4. <mark>**SubDomain**</mark>
         -it sits on the left-hand side of the Second-Level Domain using a period to separate it. e.g:- **admin.tryahckme.com** the "admin" part is the subdomain. it have the same restrictions as SLD, being limited to 63 characters and can only use a-z 0-9 and hyphens (cannot start or end with hyphens or have consecutive hyphens). You can use multiple subdomains split with periods to create longer names, such as ale.admin.tryhackme.com But the total domain length must be kept to 253 characters or less. There is no limit to the number of subdomains you can create for your domain name.
-    5. e.g:- by Image ![[/images/Domain_Hierarchy.png]]
+    5. e.g:- by Image ![](../../images/Domain_Hierarchy.png)
 3. **DNS Record**
     -is often described as the **"phonebook of the internet"**. that are instructions stored on authorization DNS servers that translate human-readable domain names into computer-readable IP address. common types of DNS records ->
     1. <mark>**NS(Name Server) Records**</mark>
@@ -36,7 +36,7 @@
     4. 1. **The TLD** server holds records for where to find the authoritative server to answer the DNS request. **The authoritative** server is often also known as the **nameserver** for the domain. e.g:- the name server for **tryhackme.com** is **kip.ns.cloudflare.com** and **uma.ns.cloudflare.com**. You'll often find multiple nameservers for a domain name to act as a backup in case one goes down.
     5. **An authoritative DNS** server is the server that is responsible for storing the DNS records for a particular domain name and where any updates to your domain name DNS records would be made. Depending on the record type, the DNS record is then sent back to the **Recursive DNS** Server, where a local copy will be cached for future requests and then relayed back to the original client that made the request. DNS records all come with a **TTL (Time To Live)** value. This value is a number represented in seconds that the response should be saved for locally until you have to look it up again. Caching saves on having to make a DNS request every time you communicate with a server.
         - <mark>**TTL(Time To Live)**</mark>->refers to the amount of time or “hops” that a packet is set to exist inside a network before being discarded by a router. TTL it's also used in **CDN caching** and **DNS caching**.
-    6. e.g:- by Image ![[/images/DNS_request_proccess.png]]
+    6. e.g:- by Image ![](../../images/DNS_request_proccess.png)
 
 
 

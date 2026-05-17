@@ -4,7 +4,7 @@
 2. **URL(Uniform Resource Locator)**
     -is the unique address used to access specific resources such as webpages, images, or documents on the internet. Often called a "web address".
    -e.g:-
-      ![[/images/URL_eg.png]]
+      ![](../../images/URL_eg.png)
     
 	  - **<mark>Scheme</mark>:** This instructs on what protocol to use for accessing the resource such as HTTP, HTTPS, FTP (File Transfer Protocol).
 	  - **<mark>User</mark>:** Some services require authentication to log in, you can put a username and password into the URL to log in.
