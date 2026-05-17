@@ -32,4 +32,4 @@
 ---
 
 ###### **By image**
-![](/images/OSI_Model.png)
+![[/images/OSI_Model.png]]
